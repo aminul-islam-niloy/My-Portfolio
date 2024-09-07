@@ -143,6 +143,61 @@ h5 {
 
 
 
+
+/* project card div */
+.project-card {
+  margin-bottom: 20px;
+  height: 300px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(0.7);
+}
+
+.project-image {
+  height: 180px; 
+  object-fit: cover;
+}
+
+.card-body h5, .card-body h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 15px; 
+}
+
+.card-body p {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.tech-used {
+  font-size: 10px; 
+  color: #343a40;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.card-link {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.card-link .card {
+  display: block;
+}
+
+.card-link:hover .card {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease;
+}
+
+
 /* site footer  */
 
 .side-footer {
