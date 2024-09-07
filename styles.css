@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10;
+    padding: 10;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: rgba(213, 210, 210, 0.9); 
+    backdrop-filter: blur(18px);
+    color: #343a40;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .social-icons a {
+    color: #343a40;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #17a2b8;
+  }
+  
+  .btn-light {
+    position: absolute;
+    top: 20px;
+    right: 40px; 
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-light:hover {
+    background-color: #c6c8ca;
+  }
+  
+  .btn-light i {
+    font-size: 1.2rem;
+    color: #343a40;
+  }
+  
+  .nav-menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #313232;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link i {
+    margin-right: 25px;
+    font-size: 1.0rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(248, 244, 244, 0.9);
+    color: #18191a;
+}
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s ease;
+  }
+  
+
+/* custom design  */
+.custom-title{
+  font-size: 18px;
+  margin: 3px;
+  font-weight: 600;
+}
+.email-add{
+  font-size: 15px;
+   margin: 5px;
+}
+
+/* site footer  */
+
+.side-footer {
+  margin-top: 110px;
+}
+
+.side-footer hr {
+  border: none;
+  border-top: 1px solid #2f2f2f;
+  margin: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #343a40;
+}
+
+.footer-content span {
+  padding: 0 10px;
+}
+
+.footer-content span:first-child {
+  margin-left: 0;
+}
+
+.footer-content span:last-child {
+  margin-right: 0;
+}
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100px;
+      height: auto;
+      height: 100vh;
+      position: fixed;
+      transition: width 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    }
+
+  
+    .profile-img {
+      width: 40px;
+      height: 45px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+    .sidebar.collapsed {
+      width: 100px;
+    }
+
+    .social-icons a {
+      color: #343a40;
+      margin: 0 10px;
+      font-size: 1.0rem;
+      text-decoration: none;
+    }
+  
+    .main-content {
+      margin-left: 100px;
+      width: 100%;
+    }
+    .custom-title{
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.6rem; 
+  }
+
+  .nav-link i {
+      font-size: 1.2rem; 
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+
+
+    .email-add{
+
+      visibility: hidden;
+    }
+    
+   
+  }
+  
