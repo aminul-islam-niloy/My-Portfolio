@@ -28,7 +28,7 @@
 
         <hr>
         <nav class="nav-menu ">
-          <a href="#About-me" class="nav-link"><i class="fa-regular fa-address-card"></i> About Me</a>
+          <a href="#aboutme" class="nav-link"><i class="fa-regular fa-address-card"></i> About Me</a>
             <a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a>
             <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
             <a href="#experience" class="nav-link"><i class="fa-solid fa-flask"></i> Experience</a>
@@ -50,9 +50,11 @@
     <div class="main-content">
 
       <div class="container">
+
+        <section id="aboutme" >
         <div class="row">
           <div class="col-xl-10 col-lg-12 col-md-6"></div>
-          <div id="about" class="about-section" style="padding: 20px; max-width: 900px; margin: 0 auto; background-color: #f7f7f7; border-radius: 10px;">
+          <div id="#About-me" class="about-section" style="padding: 20px; max-width: 900px; margin: 0 auto; background-color: #f7f7f7; border-radius: 10px;">
             <h2 align="center">AMINUL ISLAM NILOY</h2>
             <h6 align="center">Designer | Dot Net Developer</h4>
           
@@ -84,6 +86,9 @@
                  
                <a href="https://github.com/aminul-islam-niloy/Movie-Hub.git" class="card-link">🎬 Movie Hub</a>  
                   <a href="https://github.com/aminul-islam-niloy/GEO-Location-Service.git" class="card-link" target="blank">📌 GEO-Location-Service</a></li>
+
+                  <li> <a>Problem Solving Practics On:</a>
+                    <a href="https://www.leetcode.com/niloyftaminul" target="blank" class="card-link"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" height="17" width="25" alt="leetcode" /> Leet-code</a></li>
               </ul>
   
             </div>
@@ -159,9 +164,10 @@
           </div>
 
      </div>
-
-     <div id="about" class="row mt-4" style="background: #f7f7f7;">
-      <h5 class="text-center">⚒️ MY PROJECTS</h5>
+        </section>
+     <section id="projects">
+     <div id="#projects" class="row " style="background: #f7f7f7;">
+      <h5 class="text-center mt-4">⚒️ MY PROJECTS</h5>
             <div class="col-md-4 mt-2">
               <a href="https://github.com/aminul-islam-niloy/Organic-Option.git" target="blank" class="card-link">
                 <div class="card project-card">
@@ -246,12 +252,13 @@
     
   
     </div>
+     </section>
 
 
-    <div class=" table-container">
-      <h5 class="table-title">🎓 Educational Qualifications</h2>
-  
-
+     <section id="education">
+      <div class="row">
+    <div class="table-container" >
+      <h5 class="table-title ">🎓 Educational Qualifications</h2>
       <table class="table table-bordered table-responsive">
           <thead>
               <tr>
@@ -316,13 +323,15 @@
           </tbody>
       </table>
   </div>
+</div>
+</section>
+<section id="experience">
 
-  <div class="col-xl-10 col-lg-12 col-md-6"></div>
-  <div id="about" class="about-section" style="padding: 20px; max-width: 900px; margin: 0 auto; background-color: #f7f7f7; border-radius: 10px;">
+  <div  class="about-section" style="padding: 20px; max-width: 900px; margin: 0 auto; background-color: #f7f7f7; border-radius: 10px;">
   
-
+    <div id="#experience" class="row mt-2">
     <!-- Skills & Tools -->
-    <div class="text-center mt-4 justify-content-center" style="display: flex; flex-wrap: wrap;">
+    <div class="text-center mt-4 justify-content-center mb-5" style="display: flex; flex-wrap: wrap;">
         <h5 align="center">Skills & Used Tools:</h5>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg" height="30" alt="dot-net logo" style="margin: 5px;" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" alt="csharp logo" style="margin: 5px;" />
@@ -333,9 +342,7 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="30" alt="visualstudio logo" style="margin: 5px;" />
     </div>
 
-
-    <div class="row mt-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6" class="row mt-5">
             <h5 class="mb-3">🧑‍💻 Programming Experience</h5>
             <ul>
                 <li>Participated in Asian ICPC 2022</li>
@@ -356,8 +363,8 @@
                 <li>Developed multiple personal projects in web and mobile app development</li>
             </ul>
         </div>
-    </div>
-
+ 
+      </div>
 
     <div class="row mt-5">
         <div class="col-md-12">
@@ -368,6 +375,11 @@
             </p>
         </div>
     </div>
+
+  </div>
+</section>
+
+  </div>
 </div>
 </div>
   </div>
@@ -380,19 +392,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('toggle-btn').addEventListener('click', function() {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('collapsed');
-      const icon = document.querySelector('#toggle-btn i');
-      if (sidebar.classList.contains('collapsed')) {
-        icon.classList.remove('fa-chevron-left');
-        icon.classList.add('fa-chevron-right');
-      } else {
-        icon.classList.remove('fa-chevron-right');
-        icon.classList.add('fa-chevron-left');
-      }
-    });
-  </script>
+  <script src="/index.js"> </script>
 </body>
 </html>
