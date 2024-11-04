@@ -20,3 +20,54 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const options = {
+    threshold: 0.5, 
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const target = entry.target;
+
+      if (entry.isIntersecting && !target.classList.contains("played")) {
+        if (target.classList.contains("slide-left")) {
+          target.classList.add("show-left");
+        } else if (target.classList.contains("slide-right")) {
+          target.classList.add("show-right");
+        } else if (target.classList.contains("slide-up")) {
+          target.classList.add("show-up");
+        } else if (target.classList.contains("slide-bottom")) {
+          target.classList.add("show-bottom");
+        }
+        
+        target.classList.add("played", "visible");
+
+      } else if (!entry.isIntersecting && target.classList.contains("played")) {
+
+        setTimeout(() => {
+          if (target.classList.contains("slide-left")) {
+            target.classList.remove("show-left");
+          
+          } else if (target.classList.contains("slide-up")) {
+            target.classList.remove("show-up");
+          } else if (target.classList.contains("slide-bottom")) {
+            target.classList.remove("show-bottom");
+          }
+
+          target.classList.remove("played"); 
+        }, 2000); 
+      }
+    });
+  }, options);
+
+  document.querySelectorAll(".slide-left, .slide-right, .slide-up, .slide-bottom").forEach((el) => {
+    observer.observe(el);
+  });
+});
+
+
+

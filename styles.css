@@ -231,7 +231,7 @@ h5 {
 .about-details li a {
   color: #0073e6;
   text-decoration: none;
-  font-weight: 600;
+
 }
 
 .info-grid {
@@ -322,13 +322,59 @@ table td {
 }
 
 /* Apply the animations to specific classes */
-.slide-left {
-  animation: slideInLeft 1s ease-out forwards;
+
+
+/* Basic animation styles */
+@keyframes slideLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
-.slide-right {
-  animation: slideInRight 1s ease-out forwards;
+@keyframes slideRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideBottom {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-left, .slide-right, .slide-up, .slide-bottom {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+.visible {
+  opacity: 1;
+}
+
+.show-left { animation: slideLeft 1s ease forwards; }
+.show-right { animation: slideRight 1s ease forwards; }
+.show-up { animation: slideUp 0.5s ease forwards; }
+.show-bottom { animation: slideBottom 1s ease forwards; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* site footer  */
 
