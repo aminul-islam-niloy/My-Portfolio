@@ -240,8 +240,31 @@ table th, table td {
 
 
 
+/* skill section  */
+
+/* Define slide-in animations */
 
 
+
+
+@keyframes slideInLeft {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Apply the animations to specific classes */
+.slide-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-right {
+  animation: slideInRight 1s ease-out forwards;
+}
 
 
 
