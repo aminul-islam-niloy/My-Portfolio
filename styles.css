@@ -405,12 +405,22 @@ table td {
   }
 
   .sidebar {
-    width: 100px;
+    /* 
     height: auto;
     transition: width 0.3s ease;
     overflow: hidden;
     display: flex;
+    flex-direction: column; */
+    width: 100px;
+   
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
     flex-direction: column;
+    overflow-y: auto; 
+    transition: none; 
   }
 
   .profile-img {
