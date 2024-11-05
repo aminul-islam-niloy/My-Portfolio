@@ -149,7 +149,7 @@ h5 {
 /* project card div */
 .project-card {
   margin-bottom: 20px;
-  height: 300px;
+  height: 330px;
   background: #ebeded;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
@@ -168,7 +168,7 @@ h5 {
 .card-body h5,
 .card-body h6 {
   font-weight: 600;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
   font-size: 15px;
 }
 
