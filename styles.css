@@ -345,7 +345,7 @@ table td {
   to { transform: translateY(0); opacity: 1; }
 }
 
-.slide-left, .slide-right, .slide-up, .slide-bottom {
+/* .slide-left, .slide-right, .slide-up, .slide-bottom {
   opacity: 0;
 }
 
@@ -359,7 +359,7 @@ table td {
 .show-left { animation: slideLeft 1s ease forwards; }
 .show-right { animation: slideRight 1s ease forwards; }
 .show-up { animation: slideUp 0.5s ease forwards; }
-.show-bottom { animation: slideBottom 1s ease forwards; }
+.show-bottom { animation: slideBottom 1s ease forwards; } */
 
 
 
